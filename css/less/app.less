@@ -1,0 +1,516 @@
+@import 'elements.less';
+
+
+
+/* ---------------------------------------------
+				variables
+--------------------------------------------- */
+
+@rosa: #eb6f8d;
+@rosa2: #bf1564;
+@rosaclaro: #FAF6F9;
+@rosaclaro2: #f6dee9;
+@mg: 15px;
+
+
+
+
+#const{
+	margin-top: 100px;
+	background: @rosaclaro;
+	border: 1px solid @rosaclaro2;
+	.rounded(5px);
+	padding: 20px 0;
+}
+
+
+
+/* ---------------------------------------------
+				clases compartidas
+--------------------------------------------- */
+a.current {
+	color: @rosa2 !important;
+	border-bottom: 1px dashed;
+}
+.zoom {
+	.scale(1);
+	.transition(.2s, ease-out);
+	&:hover {
+		.scale(1.01);
+	}
+}
+.nobd{
+	border: none !important;
+}
+.img-bd {
+	border: 3px @rosaclaro2 solid;
+}
+/*
+.sombra4:after {
+	content: url(../../img/sombras-col-4.png);
+	margin-top: -10px;
+	margin-bottom: -60px;
+}
+*/
+
+
+h1,h2,h3,h4,h5,h6 {
+	color: @rosa2;
+	font-family: sofia, Georgia !important;
+}
+a{
+	color: @rosa2;
+	text-decoration: none;
+	.transition(.2s, ease-out);
+	&:hover {
+		color: darken(@rosa2, 10%);
+		text-decoration: underline;
+	}
+}
+.mg{
+	margin: @mg;
+}
+.mt{
+	margin-top: @mg;
+}
+.mr{
+	margin-right: @mg;
+}
+.mb {
+	margin-bottom: @mg;
+}
+.ml{
+	margin-left: @mg;
+}
+.divisor2-center {
+	width: 221px;
+	margin: 0 auto 10px auto;
+	
+}
+.divisor6-center {
+	width: 510px;
+	margin: 0 auto 10px auto;
+	
+}
+hr{
+	height: 10px !important;
+	background: url(../../img/dividor6.png) no-repeat center center !important ;
+}
+/* ---------------------------------------------
+			elementos compartidos
+--------------------------------------------- */
+
+body {
+	background: #FFF5FF url(fondo-guanis.jpg) no-repeat;
+	color: @rosa !important;
+	font-size: 14px;
+	overflow-x: hidden;
+}
+
+header {
+	background: url(headerBG.png) transparent;
+	#menuHeader {
+		height: 100px;
+		#logo {
+
+			a{
+
+				border-bottom: none;
+			}
+			img {
+				position: absolute;
+				z-index: 9999;
+				text-align: center;
+			}
+		}
+		#menu1, #menu2 {
+			text-align: center;
+			margin-top: 50px;
+			a{
+				color: @rosa;
+				.transition(.3s, ease-out);
+				font-family: sofia, cursive;
+				font-size: 25px;
+				
+				&:hover {
+					color: @rosa2;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+#mariposaBTN {
+	margin-top: -110px;
+	position: relative;
+	z-index: 10;
+}
+
+footer{
+	background: #F6DEE9;
+	#franja {
+		height: 30px;
+		background: #F2ACCD;
+	}
+	#logoFooter {
+		margin-top: -60px;
+	}
+}
+
+/* ---------------------------------------------
+					index
+--------------------------------------------- */
+
+
+#secciones {
+	position: relative;
+	z-index: 99;
+}
+#slogan{
+
+	margin-bottom: 30px;
+	margin-top: 50px;
+	p{
+		font-size: 20px;
+	}
+}
+#mariposas {
+	position: absolute;
+	z-index: 9999999;
+}
+#m1, #m2, #m3, #m4 {
+	position: relative;
+}
+#m1{
+	top: 30px;
+	left: -100px;
+}
+#m2{
+	top: 550px;
+	left: -350px;
+}
+#m3{
+	top: 60px;
+	right: -550px;
+}
+#m4{
+	top: 300px;
+	right: -350px;
+}
+#zapatos {
+	margin-bottom: 100px;
+	height: 0;
+	position: relative;
+	z-index: 1;
+	#zapato1{
+		position: relative;
+		left: -200px;
+		top: -200px;
+		margin-bottom: -200px;
+	}
+	#zapato2{
+		position: relative;
+		right: -300px;
+		top: -400px;
+		margin-bottom: -400px;
+	}
+}
+
+/* ---------------------------------------------
+					nosotros
+--------------------------------------------- */
+#nosInf {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 18px;
+}
+.vineta {
+	margin-top: 50px;
+}
+#mariposasNos {
+	position: absolute;
+	z-index: 999;
+	#mpn1, #mpn2, #mpn3{
+		position: relative;
+	}
+	#mpn1{
+		top:-400px;
+		left: 0px;
+	}
+	#mpn2{
+		top: -100px;
+		left: 300px;
+	}
+	#mpn3{
+		top: -300px;
+		left: 800px;
+	}
+	
+}
+
+/* ---------------------------------------------
+					servicios
+--------------------------------------------- */
+#servInfo {
+	text-align: center;
+	margin-top: 50px;
+	
+}
+#mariposasServ {
+	position: absolute;
+	z-index: 999;
+	#mps1, #mps2, #mps3{
+		position: relative;
+	}
+	#mps1{
+		top:-40px;
+		left: -160px;
+	}
+	#mps2{
+		top: 130px;
+		left: 100px;
+	}
+	#mps3{
+		top: 250px;
+		left: 390px;
+	}
+	
+}
+
+
+
+
+/* ---------------------------------------------
+					contacto
+--------------------------------------------- */
+#informacion {
+	margin-top: 100px;
+}
+.recuadro {
+	background: @rosaclaro;
+	.rounded(5px);
+	.transition(.3s, ease);
+	padding: 20px 0;
+	margin-bottom: 30px;
+	border: 1px solid @rosaclaro2;
+	&:hover{
+		box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+	}
+}
+form {
+	display: block;
+	height: 230px;
+}
+#info {
+	text-align: center;
+}
+#mapa {
+	img{
+		margin-top: -7px;
+	}
+}
+#mariposasCon {
+	position: absolute;
+	z-index: 999;
+	#mpc1, #mpc2, #mpc3{
+		position: relative;
+	}
+	#mpc1{
+		top:-200px;
+		left: 0px;
+	}
+	#mpc2{
+		top: -100px;
+		left: 300px;
+	}
+	#mpc3{
+		top: -400px;
+		left: 550px;
+	}
+	
+}
+
+/* ---------------------------------------------
+				media queries
+--------------------------------------------- */
+/* Extra small devices (phones, max 480px) */
+@media (max-width: 480px ) { 
+#slider {
+	margin-bottom: 30px;
+}	
+
+footer{
+	padding-bottom: 20px;
+	#logoFooter {
+		margin-top: -60px;
+	}
+}
+
+#serv2 {
+	margin-top: 0;
+}
+
+form {
+	display: block;
+	height: 400px;
+}
+
+
+}/* termina xs */
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+header {
+	#menuHeader {
+		#menu1, #menu2 {
+			a{
+				font-size: 18px;
+				
+			}
+		}
+	}
+}
+
+#m3{
+	top: 60px;
+	right: -650px;
+}
+#mariposaBTN {
+	margin-top: -80px;
+	position: relative;
+	z-index: 10;
+	left: 30px;
+}
+#nosInf {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 12px;
+}
+#mariposasServ {
+	#mps2{
+		top: 130px;
+		left: 260px;
+	}
+
+	
+}
+#serv2 {
+	margin-top: 200px !important;
+}
+#mariposasCon {
+	#mpc1{
+		top:-200px;
+		left: -100px;
+	}
+	#mpc2{
+		top: -100px;
+		left: 300px;
+	}
+	#mpc3{
+		top: -400px;
+		left: 600px;
+	}
+	
+}
+
+}/* termina sm */
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1100px) { 
+
+
+#m1{
+	top: 10px;
+	left: -90px;
+}
+#m2{
+	top: 450px;
+	left: -350px;
+}
+#m3{
+	top: 60px;
+	right: -350px;
+}
+#m4{
+	top: 250px;
+	right: -150px;
+}
+
+#nosInf {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 14px;
+}
+
+#mpn2{
+    top: -100px;
+    left: 300px;
+}
+#mpn3{
+    top: -300px;
+    left: 800px;
+}
+
+#mariposasServ {
+	#mps2{
+		top: 130px;
+		left: 450px;
+	}
+	#mps3{
+		top: 250px;
+		left: 700px;
+	}
+	
+}
+#serv2 {
+	margin-top: 200px;
+}
+	
+}/* termina md */
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+header {
+	#menuHeader {
+		#menu1, #menu2 {
+			a{
+				font-size: 23px;
+				
+			}
+		}
+	}
+}
+
+#nosInf {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 18px;
+}
+#mariposasServ {
+
+	#mps2{
+		top: 130px;
+		left: 100px;
+	}
+}
+#serv2 {
+	margin-top: 200px;
+}
+
+
+}/* termina lg */
+
+.boton a{
+	font-size: 28px;
+	background: @rosaclaro;
+	padding: 10px 100px;
+	text-decoration: none;
+
+	
+	
+} 

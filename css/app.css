@@ -1,0 +1,462 @@
+/* ---------------------------------------------
+				variables
+--------------------------------------------- */
+#const {
+  margin-top: 100px;
+  background: #faf6f9;
+  border: 1px solid #f6dee9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px 0;
+}
+/* ---------------------------------------------
+				clases compartidas
+--------------------------------------------- */
+a.current {
+  color: #bf1564 !important;
+  border-bottom: 1px dashed;
+}
+.zoom {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.zoom:hover {
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+}
+.nobd {
+  border: none !important;
+}
+.img-bd {
+  border: 3px #f6dee9 solid;
+}
+/*
+.sombra4:after {
+	content: url(../../img/sombras-col-4.png);
+	margin-top: -10px;
+	margin-bottom: -60px;
+}
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #bf1564;
+  font-family: sofia, Georgia !important;
+}
+a {
+  color: #bf1564;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+a:hover {
+  color: #91104c;
+  text-decoration: underline;
+}
+.mg {
+  margin: 15px;
+}
+.mt {
+  margin-top: 15px;
+}
+.mr {
+  margin-right: 15px;
+}
+.mb {
+  margin-bottom: 15px;
+}
+.ml {
+  margin-left: 15px;
+}
+.divisor2-center {
+  width: 221px;
+  margin: 0 auto 10px auto;
+}
+.divisor6-center {
+  width: 510px;
+  margin: 0 auto 10px auto;
+}
+hr {
+  height: 10px !important;
+  background: url(../../img/dividor6.png) no-repeat center center !important;
+}
+/* ---------------------------------------------
+			elementos compartidos
+--------------------------------------------- */
+body {
+  background: #fff5ff url(fondo-guanis.jpg) no-repeat;
+  color: #eb6f8d !important;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+header {
+  background: url(headerBG.png) transparent;
+}
+header #menuHeader {
+  height: 100px;
+}
+header #menuHeader #logo a {
+  border-bottom: none;
+}
+header #menuHeader #logo img {
+  position: absolute;
+  z-index: 9999;
+  text-align: center;
+}
+header #menuHeader #menu1,
+header #menuHeader #menu2 {
+  text-align: center;
+  margin-top: 50px;
+}
+header #menuHeader #menu1 a,
+header #menuHeader #menu2 a {
+  color: #eb6f8d;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  font-family: sofia, cursive;
+  font-size: 25px;
+}
+header #menuHeader #menu1 a:hover,
+header #menuHeader #menu2 a:hover {
+  color: #bf1564;
+  text-decoration: none;
+}
+#mariposaBTN {
+  margin-top: -110px;
+  position: relative;
+  z-index: 10;
+}
+footer {
+  background: #F6DEE9;
+}
+footer #franja {
+  height: 30px;
+  background: #F2ACCD;
+}
+footer #logoFooter {
+  margin-top: -60px;
+}
+/* ---------------------------------------------
+					index
+--------------------------------------------- */
+#secciones {
+  position: relative;
+  z-index: 99;
+}
+#slogan {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+#slogan p {
+  font-size: 20px;
+}
+#mariposas {
+  position: absolute;
+  z-index: 9999999;
+}
+#m1,
+#m2,
+#m3,
+#m4 {
+  position: relative;
+}
+#m1 {
+  top: 30px;
+  left: -100px;
+}
+#m2 {
+  top: 550px;
+  left: -350px;
+}
+#m3 {
+  top: 60px;
+  right: -550px;
+}
+#m4 {
+  top: 300px;
+  right: -350px;
+}
+#zapatos {
+  margin-bottom: 100px;
+  height: 0;
+  position: relative;
+  z-index: 1;
+}
+#zapatos #zapato1 {
+  position: relative;
+  left: -200px;
+  top: -200px;
+  margin-bottom: -200px;
+}
+#zapatos #zapato2 {
+  position: relative;
+  right: -300px;
+  top: -400px;
+  margin-bottom: -400px;
+}
+/* ---------------------------------------------
+					nosotros
+--------------------------------------------- */
+#nosInf {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+.vineta {
+  margin-top: 50px;
+}
+#mariposasNos {
+  position: absolute;
+  z-index: 999;
+}
+#mariposasNos #mpn1,
+#mariposasNos #mpn2,
+#mariposasNos #mpn3 {
+  position: relative;
+}
+#mariposasNos #mpn1 {
+  top: -400px;
+  left: 0px;
+}
+#mariposasNos #mpn2 {
+  top: -100px;
+  left: 300px;
+}
+#mariposasNos #mpn3 {
+  top: -300px;
+  left: 800px;
+}
+/* ---------------------------------------------
+					servicios
+--------------------------------------------- */
+#servInfo {
+  text-align: center;
+  margin-top: 50px;
+}
+#mariposasServ {
+  position: absolute;
+  z-index: 999;
+}
+#mariposasServ #mps1,
+#mariposasServ #mps2,
+#mariposasServ #mps3 {
+  position: relative;
+}
+#mariposasServ #mps1 {
+  top: -40px;
+  left: -160px;
+}
+#mariposasServ #mps2 {
+  top: 130px;
+  left: 100px;
+}
+#mariposasServ #mps3 {
+  top: 250px;
+  left: 390px;
+}
+/* ---------------------------------------------
+					contacto
+--------------------------------------------- */
+#informacion {
+  margin-top: 100px;
+}
+.recuadro {
+  background: #faf6f9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  border: 1px solid #f6dee9;
+}
+.recuadro:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+form {
+  display: block;
+  height: 230px;
+}
+#info {
+  text-align: center;
+}
+#mapa img {
+  margin-top: -7px;
+}
+#mariposasCon {
+  position: absolute;
+  z-index: 999;
+}
+#mariposasCon #mpc1,
+#mariposasCon #mpc2,
+#mariposasCon #mpc3 {
+  position: relative;
+}
+#mariposasCon #mpc1 {
+  top: -200px;
+  left: 0px;
+}
+#mariposasCon #mpc2 {
+  top: -100px;
+  left: 300px;
+}
+#mariposasCon #mpc3 {
+  top: -400px;
+  left: 550px;
+}
+/* ---------------------------------------------
+				media queries
+--------------------------------------------- */
+/* Extra small devices (phones, max 480px) */
+@media (max-width: 480px) {
+  #slider {
+    margin-bottom: 30px;
+  }
+  footer {
+    padding-bottom: 20px;
+  }
+  footer #logoFooter {
+    margin-top: -60px;
+  }
+  #serv2 {
+    margin-top: 0;
+  }
+  form {
+    display: block;
+    height: 400px;
+  }
+}
+/* termina xs */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header #menuHeader #menu1 a,
+  header #menuHeader #menu2 a {
+    font-size: 18px;
+  }
+  #m3 {
+    top: 60px;
+    right: -650px;
+  }
+  #mariposaBTN {
+    margin-top: -80px;
+    position: relative;
+    z-index: 10;
+    left: 30px;
+  }
+  #nosInf {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 12px;
+  }
+  #mariposasServ #mps2 {
+    top: 130px;
+    left: 260px;
+  }
+  #serv2 {
+    margin-top: 200px !important;
+  }
+  #mariposasCon #mpc1 {
+    top: -200px;
+    left: -100px;
+  }
+  #mariposasCon #mpc2 {
+    top: -100px;
+    left: 300px;
+  }
+  #mariposasCon #mpc3 {
+    top: -400px;
+    left: 600px;
+  }
+}
+/* termina sm */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1100px) {
+  #m1 {
+    top: 10px;
+    left: -90px;
+  }
+  #m2 {
+    top: 450px;
+    left: -350px;
+  }
+  #m3 {
+    top: 60px;
+    right: -350px;
+  }
+  #m4 {
+    top: 250px;
+    right: -150px;
+  }
+  #nosInf {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+  }
+  #mpn2 {
+    top: -100px;
+    left: 300px;
+  }
+  #mpn3 {
+    top: -300px;
+    left: 800px;
+  }
+  #mariposasServ #mps2 {
+    top: 130px;
+    left: 450px;
+  }
+  #mariposasServ #mps3 {
+    top: 250px;
+    left: 700px;
+  }
+  #serv2 {
+    margin-top: 200px;
+  }
+}
+/* termina md */
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header #menuHeader #menu1 a,
+  header #menuHeader #menu2 a {
+    font-size: 23px;
+  }
+  #nosInf {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+  }
+  #mariposasServ #mps2 {
+    top: 130px;
+    left: 100px;
+  }
+  #serv2 {
+    margin-top: 200px;
+  }
+}
+/* termina lg */
+.boton a {
+  font-size: 28px;
+  background: #faf6f9;
+  padding: 10px 100px;
+  text-decoration: none;
+}
